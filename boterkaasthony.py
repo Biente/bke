@@ -44,6 +44,20 @@ validation_agent = RandomAgent()
 
 validation_result = validate(agent_x=my_agent, agent_o=validation_agent, iterations=100)
  
-plot_validation(validation_result)
+#plot_validation(validation_result)
+
+
+    
+while True:
+  choice = input("\n 1: speel met 2 spelers \n 2: speel tegen de computer (makkelijk) \n 3: speel tegen de computer (moeilijk) \n Kies wat je wilt spelen: \n")
+
+  if choice == '1':
+    start()
+
+  #if choice == '2':
+  
+
+  #if choice == '3':
+   
 
 
