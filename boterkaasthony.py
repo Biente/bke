@@ -8,15 +8,6 @@ class MyRandomAgent(EvaluationAgent):
         return random.randint(1, 500)
 
 my_random_agent = MyRandomAgent()
-
-class MijnSpeler(EvaluationAgent):
-    def evaluate(self, board, my_symbol, opponent_symbol):
-        getal = 1
-        if can_win(board, opponent_symbol):
-            getal = getal - 1000
-        return getal
-
-mijn_speler = MijnSpeler()
  
 class MyAgent(MLAgent):
     def evaluate(self, board):
@@ -54,10 +45,10 @@ while True:
   if choice == '1':
     start()
 
-  #if choice == '2':
-  
+  if choice == '2':
+    start(agent_o=validation_agent)
 
-  #if choice == '3':
+
+  if choice == '3':
+    start(agent_o=my_agent)
    
-
-
