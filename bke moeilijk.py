@@ -1,4 +1,4 @@
-from bke import MLAgent, is_winner, opponent, train, load, start, save
+from bke import MLAgent, is_winner, opponent, train, load, start, save, validate, RandomAgent, plot_validation
  
  
 class MyAgent(MLAgent):
@@ -31,3 +31,7 @@ for i in range(100):
 winners[PLAYER_X] = winners[PLAYER_X] / 100
 winners[PLAYER_O] = winners[PLAYER_O] / 100
 winners[None] = winners[None] / 100
+
+validation_result = validate(agent_x=my_agent, agent_o=validation_agent, iterations=100)
+ 
+plot_validation(validation_result)
