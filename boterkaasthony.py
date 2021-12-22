@@ -46,9 +46,9 @@ while True:
     start()
 
   if choice == '2':
-    start(agent_o=validation_agent)
+    start(player_o=validation_agent)
 
 
   if choice == '3':
-    start(agent_o=my_agent)
+    start(player_o=my_agent)
    
